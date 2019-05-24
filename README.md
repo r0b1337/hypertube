@@ -17,7 +17,7 @@ du protocole BitTorrent.
 
 ### Installation
 ```
-git clone https://github.com/r0bsama/hypertube.git && cd hypertube
+git clone https://github.com/r0b1337/hypertube.git && cd hypertube
 docker-compose up
 ```
 or to do a clean fresh install
