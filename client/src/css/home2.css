@@ -1,0 +1,94 @@
+.masthead {
+	height: 70vh;
+	min-height: 500px;
+	background-image: url('../medias/home.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition:all 1s;
+	transition:all 1s;
+	opacity: 0.8;
+	filter: blur(2px);
+}
+
+.masthead:hover  {
+	filter: blur(0px);
+	-webkit-transition:all 1s;
+	transition:all 1s;
+}
+
+.masthead:hover .name {
+	letter-spacing: 2vw;
+	-webkit-transition:all 2s;
+	transition:all 2s;
+}
+
+.name {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 7vw;
+	font-weight: bold;
+	color: #ff0000;
+	letter-spacing: 3vw;
+	-webkit-transition:all 2s;
+	transition:all 2s;
+}
+
+.title2{
+	font-size: 4vw;
+	letter-spacing: 1vw;
+	-webkit-transition:all 1.5s;
+	transition:all 1.5s;
+}
+
+
+.title3{
+	font-size: 2vw;
+	letter-spacing: 0vw;
+	-webkit-transition:all 1.5s;
+	transition:all 1.5s;
+}
+
+.cont2 {
+	background-color: FireBrick;
+	padding: 70px 0 70px 0;
+	border-bottom: 3px solid #fff;
+	border-top: 3px solid #fff;
+}
+
+.cont2:hover .title2{
+	letter-spacing: 10px;
+	-webkit-transition:all 2s;
+	transition:all 2s;
+}
+
+.cont2:hover .title3{
+	letter-spacing: 2px;
+	-webkit-transition:all 1.5s;
+	transition:all 1.5s;
+}
+
+.cont2:hover .cont3 {
+	filter: blur(0px);
+	-webkit-transition:all 1.5s;
+	transition:all 1.5s;
+}
+
+.cont3 {
+	filter: blur(3px);
+	-webkit-transition:all 1.5s;
+	transition:all 1.5s;
+}
+.cont4 {
+	opacity: 0.3;
+	margin: 50px 100px 50px 100px;
+	-webkit-transition:all 1.5s;
+	transition:all 1.5s;
+}
+
+.cont4:hover {
+	opacity: 1;
+	transform: scale(1.1);
+	-webkit-transition:all 2s;
+	transition:all 2s;
+}

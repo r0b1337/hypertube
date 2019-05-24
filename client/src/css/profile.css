@@ -1,0 +1,83 @@
+.maincont {
+	margin: 50px 0 0 0;
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+	margin: 0 60px 0 60px;
+}
+
+.img_ch {
+	object-fit: cover;
+	-webkit-transition:all 1s;
+	transition:all 0.5s;
+	transform: scale(1);
+}
+
+.img_ch:hover {
+	-webkit-transition:all 1s;
+	transition:all 0.5s;
+	transform: scale(1.1);
+}
+
+.img_all {
+	margin: 50px 0 0 0;
+}
+
+.btn-right {
+	
+}
+
+.infos {
+	margin: 40px 10vw 0 10vw;
+}
+
+.inf1 {
+	margin: 30px 0 0 0;
+}
+
+.inf1 input {
+	display: none;
+}
+
+.inf1:hover input {
+	display: block;
+}
+
+.inf1 button {
+	display: none;
+}
+
+.inf1:hover button {
+	display: block;
+}
+
+.btn-infos {
+	display: flex;
+	flex-direction: row;
+}
+
+.btn-infos2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.movie_history {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-around;
+	margin: 30px 0 0 0;
+}
+
+.movie_all {
+	border-left: 6px solid #f00;
+	background-color: #800000;
+	margin: 30px 20px 30px 20px;
+	padding: 0 30px 0 25px;
+}
+
+.movie_title {
+	margin: 10px 0 0 0;
+}

@@ -1,0 +1,77 @@
+version: "3.7"
+
+services:
+  mysql-db:
+    image: mysql:latest
+    container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: "gayadmin"
+        MYSQL_DATABASE: "hypertube_db"
+    ports:
+      - "3306:3306"
+    volumes:
+      - data:/var/lib/mysql
+      - ./database:/docker-entrypoint-initdb.d
+    networks:
+      - hypertube-network
+
+  server:
+    container_name: server 
+    build:
+      context: ./server
+    command : npm start
+    depends_on:
+      - mysql-db
+    restart: always
+    ports:
+      - "1337:1337"
+    environment:
+        DB_HOST: mysql-db
+        DB_PORT: "3306"
+        DB_USER: "root"
+        DB_PASS: "gayadmin"
+        DB_NAME: "hypertube_db"
+        CL_HOST: client
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+    networks:
+      - hypertube-network
+
+  client:
+    container_name: client
+    build:
+      context: ./client
+    command : npm start
+    restart: always
+    ports:
+      - "80:3000"
+    environment:
+      - DOCKER_IP
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    networks:
+      - hypertube-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    ports:
+     - 81:80
+    environment:
+     MYSQL_USERNAME: root
+     MYSQL_ROOT_PASSWORD: gayadmin
+     PMA_HOST: mysql-db
+    networks:
+     - hypertube-network
+
+volumes:
+  data:
+
+networks:
+  hypertube-network:
+    driver: bridge

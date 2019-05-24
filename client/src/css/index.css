@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:700|Lato:700|Roboto:500");
+
+html, body, .root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  	background: linear-gradient(to right, #110c11, #000000);
+}

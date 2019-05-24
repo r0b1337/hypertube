@@ -1,0 +1,38 @@
+.toast-text {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+
+.toast-error {
+	background-color: #CC0000 !important;
+	border-radius: 5rem !important;
+	color: white !important;
+}
+
+.toast-success {
+	background-color: #17d36c !important;
+	border-radius: 5rem !important;
+	color: white !important;
+}
+
+.flex-div {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+	align-items: baseline;
+	align-content: center;
+}
+
+.responsive-div{
+	width: 70vmin;
+	margin: auto;
+}
+
+.long-div{
+	height: 50vmax;
+}

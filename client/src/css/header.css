@@ -1,0 +1,17 @@
+.img1 {
+	margin-right: 10px;
+	padding: 1px 1px 1px 1px;
+}
+
+.img2 {
+	margin-right: 20px;
+	padding: 1px 1px 1px 1px;
+}
+
+.img1:hover {
+	border: 1px solid #fff;
+}
+
+.img2:hover {
+	border: 1px solid #fff;
+}
